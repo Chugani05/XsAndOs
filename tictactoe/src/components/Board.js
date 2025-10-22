@@ -14,9 +14,15 @@ export default function Board({ xIsNext, squares, onPlay }) {
   }
 
   const winner = calculateWinner(squares);
-  const status = winner
-    ? `Winner: ${winner}`
-    : `Next player: ${xIsNext ? 'X' : 'O'}`;
+
+  let status;
+  if (winner) {
+    status = `Winner: ${winner}`;
+  } else if (!squares.includes(null)) {
+    status = 'Tie';
+  } else {
+    status = `Next player: ${xIsNext ? 'X' : 'O'}`;
+  }
 
   return (
     <View style={Styles.boardContainer}>

@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 export const Styles = StyleSheet.create({
-  // 🔹 App container
+  // App container
   appContainer: {
     flex: 1,
     backgroundColor: '#0d1117',
@@ -9,15 +9,15 @@ export const Styles = StyleSheet.create({
     alignItems: 'center',
   },
 
-  // 🔹 Game container (tablero + historial)
+  // Game container
   gameContainer: {
-    flexDirection: 'row', // ⬅️ Tablero e historial uno al lado del otro
+    flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'flex-start',
-    gap: 30, // espacio entre ambos bloques
+    gap: 30,
   },
 
-  // 🔹 Board styles
+  // Board styles
   boardContainer: {
     alignItems: 'center',
   },
@@ -31,7 +31,7 @@ export const Styles = StyleSheet.create({
     fontWeight: '600',
   },
 
-  // 🔹 Square styles
+  // Square styles
   square: {
     width: 90,
     height: 90,
@@ -49,7 +49,7 @@ export const Styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 
-  // 🔹 History section
+  // History section
   historyContainer: {
     alignItems: 'center',
   },
