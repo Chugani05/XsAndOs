@@ -31,6 +31,14 @@ export const Styles = StyleSheet.create({
     fontWeight: '600',
   },
 
+  // Board section
+  boardSection: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    
+  },
+
   // Square styles
   square: {
     width: 90,
@@ -73,4 +81,24 @@ export const Styles = StyleSheet.create({
     fontSize: 16,
     textAlign: 'center',
   },
+
+  // Reset button
+  resetButton: {
+    backgroundColor: '#21262d',
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 10,
+    alignItems: 'center',
+    marginTop: 20,
+    shadowColor: '#000',
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
+    shadowOffset: {width: 2, height: 2},
+  },
+  resetText: {
+    color: '#fff',
+    fontSize: 18,
+    textAlign: 'center',
+    fontWeight: 'bold',
+  }
 });

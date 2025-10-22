@@ -33,7 +33,7 @@ export default function Game() {
 
   return (
     <View style={Styles.gameContainer}>
-      <View>
+      <View style={Styles.boardSection}>
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
         <ResetButton title='Restart Game' onPress={restartGame}></ResetButton>
       </View>
