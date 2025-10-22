@@ -34,14 +34,10 @@ export default function Game() {
   return (
     <View style={Styles.gameContainer}>
       <View>
-        {/* Tablero */}
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
-        
-        {/* Reset Button */}
         <ResetButton title='Restart Game' onPress={restartGame}></ResetButton>
       </View>
 
-      {/* Historial */}
       <View style={Styles.historyContainer}>
         <Text style={Styles.historyTitle}>Game History</Text>
         <FlatList
