@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import Square from './Square';
 import { calculateWinner } from '../utils/calculateWinner';
+import { Styles } from '../styles/GlobalStyles';
 
 export default function Board({ xIsNext, squares, onPlay }) {
   function handleClick(i) {
@@ -18,10 +19,10 @@ export default function Board({ xIsNext, squares, onPlay }) {
     : `Next player: ${xIsNext ? 'X' : 'O'}`;
 
   return (
-    <View>
-      <Text>{status}</Text>
+    <View style={Styles.boardContainer}>
+      <Text style={Styles.statusText}>{status}</Text>
       {[0, 3, 6].map((rowStart) => (
-        <View key={rowStart} >
+        <View key={rowStart} style={Styles.boardRow}>
           <Square value={squares[rowStart]} onSquareClick={() => handleClick(rowStart)} />
           <Square value={squares[rowStart + 1]} onSquareClick={() => handleClick(rowStart + 1)} />
           <Square value={squares[rowStart + 2]} onSquareClick={() => handleClick(rowStart + 2)} />
