@@ -4,8 +4,10 @@ import Square from './Square';
 import { calculateWinner } from '../utils/calculateWinner';
 import { Styles } from '../styles/GlobalStyles';
 
-export default function Board({ xIsNext, squares, onPlay }) {
-  function handleClick(i) {
+type Props = {xIsNext: boolean, squares: any, onPlay:(squares: any) => void }
+
+export default function Board({ xIsNext, squares, onPlay }: Props) {
+  function handleClick(i: number) {
     if (calculateWinner(squares) || squares[i]) return;
 
     const nextSquares = squares.slice();
