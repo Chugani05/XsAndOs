@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, FlatList } from 'react-native';
 import Board from './components/Board';
 import { Styles } from './styles/GlobalStyles';
+import ResetButton from './components/ResetButton';
 
 export default function Game() {
   const [history, setHistory] = useState([Array(9).fill(null)]);
@@ -20,6 +21,11 @@ export default function Game() {
     setCurrentMove(move);
   }
 
+  function restartGame() {
+    setHistory([Array(9).fill(null)]);
+    setCurrentMove(0);
+  }
+
   const moves = history.map((squares, move) => ({
     key: move.toString(),
     label: move ? `Go to move #${move}` : 'Go to game start',
@@ -27,8 +33,13 @@ export default function Game() {
 
   return (
     <View style={Styles.gameContainer}>
-      {/* Tablero */}
-      <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+      <View>
+        {/* Tablero */}
+        <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+        
+        {/* Reset Button */}
+        <ResetButton title='Restart Game' onPress={restartGame}></ResetButton>
+      </View>
 
       {/* Historial */}
       <View style={Styles.historyContainer}>
