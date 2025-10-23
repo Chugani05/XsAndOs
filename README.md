@@ -4,11 +4,24 @@
   <img src="./resources/xsandos.png" alt="X's And O's" width="80%">
 </div>
 
+**X's and O's** es una aplicación móvil desarrollada con **React Native** y **TypeScript** que recrea el clásico juego **Tic Tac Toe** (Tres en Raya). La aplicación ofrece una experiencia interactiva y visualmente atractiva, diseñada para jugar entre dos personas en el mismo dispositivo.
+
 ## Tabla de contenidos
 
+- [Características principales](#características-principales)
 - [Requisitos](#requisitos)
 - [Estructura del proyecto](#estructura-del-proyecto)
 - [Puesta en marcha](#puesta-en-marcha)
+
+
+## Características principales
+
+- **Tablero interactivo:** El juego muestra un tablero de 3x3 donde los jugadores alternan turnos colocando sus marcas (❌ y ⭕).
+- **Indicador de turno:** Antes de cada jugada, la interfaz muestra claramente de quién es el turno actual, permitiendo a los jugadores seguir fácilmente el flujo de la partida.
+- **Historial de movimientos:** Permite visualizar la secuencia de jugadas realizadas durante la partida, ofreciendo la posibilidad de analizar el progreso del juego.
+- **Mensaje de resultado:** Al finalizar la partida, se muestra un mensaje indicando si hay un ganador o si la partida terminó en empate.
+- **Botón de reinicio:** Incluye un botón que permite reiniciar el juego en cualquier momento para comenzar una nueva partida.
+- **Lógica con TypeScript:** Toda la lógica del juego está implementada con TypeScript, garantizando tipado seguro, mantenimiento más sencillo y mayor fiabilidad en el código.
 
 
 ## Requisitos
