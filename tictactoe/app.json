@@ -4,7 +4,7 @@
     "slug": "tictactoe",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/tictactoe-icon.png",
     "scheme": "tictactoe",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,29 +13,29 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/icon-background.png",
-        "backgroundImage": "./assets/images/icon-background.png",
-        "monochromeImage": "./assets/images/icon-background.png"
+        "backgroundColor": "#0d1117",
+        "foregroundImage": "./assets/images/tictactoe-icon-background.png",
+        "backgroundImage": "./assets/images/tictactoe-icon-background.png",
+        "monochromeImage": "./assets/images/tictactoe-icon-background.png"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/tictactoe-favicon.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/tictactoe-icon-background.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
+          "backgroundColor": "#0d1117",
           "dark": {
-            "backgroundColor": "#000000"
+            "backgroundColor": "#0d1117"
           }
         }
       ]
