@@ -9,8 +9,8 @@ interface ResetButtonProp {
 
 export default function ResetButton({title, onPress}: ResetButtonProp) {
     return (
-        <TouchableOpacity style={Styles.resetButton} onPress={onPress}>
-            <Text style={Styles.resetText}>{title}</Text>
+        <TouchableOpacity style={Styles.button} onPress={onPress}>
+            <Text style={Styles.buttonText}>{title}</Text>
         </TouchableOpacity>
     )
 }

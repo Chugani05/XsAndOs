@@ -57,33 +57,14 @@ export const Styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 
-  // History section
-  historyContainer: {
+  // buttons
+  controlsContainer: {
+    flexDirection: 'row',
     alignItems: 'center',
+    marginTop: 20,
+    gap: 10,
   },
-  historyTitle: {
-    color: '#f0f6fc',
-    fontSize: 18,
-    marginBottom: 10,
-    fontWeight: '600',
-    textAlign: 'center',
-  },
-  moveButton: {
-    backgroundColor: '#21262d',
-    paddingVertical: 8,
-    paddingHorizontal: 16,
-    borderRadius: 8,
-    marginVertical: 4,
-    minWidth: 140,
-  },
-  moveText: {
-    color: '#c9d1d9',
-    fontSize: 16,
-    textAlign: 'center',
-  },
-
-  // Reset button
-  resetButton: {
+  button: {
     backgroundColor: '#21262d',
     paddingVertical: 12,
     paddingHorizontal: 20,
@@ -95,10 +76,38 @@ export const Styles = StyleSheet.create({
     shadowRadius: 4,
     shadowOffset: {width: 2, height: 2},
   },
-  resetText: {
+  buttonText: {
     color: '#fff',
     fontSize: 18,
     textAlign: 'center',
     fontWeight: 'bold',
-  }
+  },
+
+  // dropdown
+  dropdownWrapper: {
+    position: 'relative',
+  },
+  dropdownList: {
+    position: 'absolute',
+    top: 50,
+    width: 180,
+    backgroundColor: '#1c1c1c',
+    borderRadius: 10,
+    shadowColor: '#000',
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
+    shadowOffset: { width: 1, height: 3 },
+    zIndex: 5,
+    paddingVertical: 5,
+  },
+  dropdownItem: {
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    borderBottomColor: '#333',
+    borderBottomWidth: 1,
+  },
+  dropdownItemText: {
+    color: '#fff',
+    fontSize: 14,
+  },
 });
