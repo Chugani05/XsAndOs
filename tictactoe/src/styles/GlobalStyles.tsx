@@ -89,7 +89,7 @@ export const Styles = StyleSheet.create({
   },
   dropdownList: {
     position: 'absolute',
-    bottom: 48, // 👈 se posiciona encima del botón
+    bottom: 48,
     right: 0,
     width: 180,
     backgroundColor: '#1c1c1c',
