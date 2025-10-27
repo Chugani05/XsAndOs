@@ -1,6 +1,6 @@
 # X's and O's
 
-<div style="text-align: center;">
+<div align="center">
   <img src="./resources/xsandos-board.png" alt="X's And O's" width="30%" style="display:inline-block; margin: 0 10px;">
   <img src="./resources/xsandos-history.png" alt="X's And O's" width="30%" style="display:inline-block; margin: 0 10px;">
 </div>
