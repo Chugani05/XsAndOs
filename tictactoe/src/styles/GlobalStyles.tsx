@@ -89,15 +89,17 @@ export const Styles = StyleSheet.create({
   },
   dropdownList: {
     position: 'absolute',
-    top: 50,
+    bottom: 48, // 👈 se posiciona encima del botón
+    right: 0,
     width: 180,
     backgroundColor: '#1c1c1c',
     borderRadius: 10,
     shadowColor: '#000',
-    shadowOpacity: 0.3,
-    shadowRadius: 4,
+    shadowOpacity: 0.5,
+    shadowRadius: 8,
     shadowOffset: { width: 1, height: 3 },
-    zIndex: 5,
+    zIndex: 50,
+    elevation: 10,
     paddingVertical: 5,
   },
   dropdownItem: {

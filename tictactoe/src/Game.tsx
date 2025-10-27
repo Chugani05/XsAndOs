@@ -44,7 +44,7 @@ export default function Game() {
           <ResetButton title='Restart Game' onPress={restartGame}></ResetButton>
           
           <View style={Styles.dropdownWrapper}>
-            <HistoryButton title='Moves ▾' onPress={() => setIsDropdownOpen(!isDropdownOpen)}></HistoryButton>
+            <HistoryButton title='Moves ▴' onPress={() => setIsDropdownOpen(!isDropdownOpen)}></HistoryButton>
               {isDropdownOpen && (
                 <View style={Styles.dropdownList}>
                   <FlatList
@@ -62,18 +62,7 @@ export default function Game() {
 
         </View>
       </View>
-
-      {/* <View style={Styles.historyContainer}>
-        <Text style={Styles.historyTitle}>Game History</Text>
-        <FlatList
-          data={moves}
-          renderItem={({ item }) => (
-            <TouchableOpacity style={Styles.moveButton} onPress={() => jumpTo(Number(item.key))}>
-              <Text style={Styles.moveText}>{item.label}</Text>
-            </TouchableOpacity>
-          )}
-        />
-      </View> */}
+      
     </View>
   );
 }
