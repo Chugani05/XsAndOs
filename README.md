@@ -1,8 +1,10 @@
 # X's and O's
 
-<div align="center">
-  <img src="./resources/xsandos.png" alt="X's And O's" width="80%">
+<div style="text-align: center;">
+  <img src="./resources/xsandos-board.png" alt="X's And O's" width="30%" style="display:inline-block; margin: 0 10px;">
+  <img src="./resources/xsandos-history.png" alt="X's And O's" width="30%" style="display:inline-block; margin: 0 10px;">
 </div>
+
 
 **X's and O's** es una aplicación móvil desarrollada con **React Native** y **TypeScript** que recrea el clásico juego **Tic Tac Toe** (Tres en Raya). La aplicación ofrece una experiencia interactiva y visualmente atractiva, diseñada para jugar entre dos personas en el mismo dispositivo.
 
