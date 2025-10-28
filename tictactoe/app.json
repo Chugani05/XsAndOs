@@ -23,14 +23,14 @@
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/tictactoe-favicon.png"
+      "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/tictactoe-icon-background.png",
+          "image": "./assets/images/tictactoe-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#0d1117",
@@ -44,6 +44,9 @@
       "typedRoutes": true,
       "reactCompiler": true,
       "baseUrl": "/xsandos"
-    }
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
   }
 }
