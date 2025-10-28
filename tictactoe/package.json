@@ -5,8 +5,8 @@
   "version": "1.0.0",
 
   "scripts": {
+    "deploy": "gh-pages --nojekyll -d dist",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
     "android": "expo start --android",
