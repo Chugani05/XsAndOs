@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/Chugani05/XsAndOs.git",
+  "homepage": "https://github.com/Chugani05/XsAndOs",
   "name": "tictactoe",
   "main": "expo-router/entry",
   "version": "1.0.0",
@@ -48,5 +48,5 @@
     "gh-pages": "^6.3.0",
     "typescript": "~5.9.2"
   },
-  "private": true
+  "private": false
 }
